@@ -6,6 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
+// This is the main database class for the application.
 @Database(
     entities = [User::class, Category::class, Expense::class, Budget::class],
     version = 1,
@@ -34,4 +35,4 @@ abstract class BudgetDatabase : RoomDatabase() {
             }
         }
     }
-} 
+}
