@@ -6,6 +6,7 @@ import androidx.room.Query
 import androidx.room.OnConflictStrategy
 import kotlinx.coroutines.flow.Flow
 
+// This interface defines the Data Access Object (DAO) for the Budget entity.
 @Dao
 interface BudgetDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
